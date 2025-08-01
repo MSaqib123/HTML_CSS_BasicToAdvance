@@ -1,0 +1,54 @@
+/* ================================================ */
+/* 6 properite to style Text */
+/* ================================================ */
+
+h1 {
+    /* 1. Color properties */
+    color: blue;
+
+    /* 2. Font-size prop */
+    font-size: 26px;
+    
+    /* 3. font-family  prop */
+    font-family: sans-serif;
+    
+    /* 4. text-transform prop */
+    text-transform: uppercase;
+
+    /* 5. text-transform prop */
+    font-style: italic;
+
+}
+
+
+h2{
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+h3{
+    font-size:30px;
+    font-family: sans-serif;
+}
+
+h4{
+    font-size:20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+
+    /* 6. text-align pro  (align b/w  box and tax)*/
+    text-align: center;
+}
+
+p{
+    font-size: 22px;
+    font-family: sans-serif;
+
+    /* 7. Line height pro  (sapace b/w lines)*/
+    line-height: 1.5;
+}
+
+li{
+    font-size: 20px;
+    font-family: sans-serif;
+}
