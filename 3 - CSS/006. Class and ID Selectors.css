@@ -1,6 +1,3 @@
-/* ================================================ */
-/* 005 Combining Selectors */
-/* ================================================ */
 h1,h2,h3,h4,p,li{
     font-family: sans-serif;
 }
@@ -32,13 +29,34 @@ li{
 }
 
 /* ================================================ */
-/* 005 Nested Descendant Selector */
-/* 005 Selecting Child Selectors */
+/* ID Selector */
 /* ================================================ */
-footer p{
+/* footer p{
+    font-size: 16px;
+} */
+#copyright{
     font-size: 16px;
 }
 
-article header p{
+/* article header p{
     font-style: italic;
+} */
+#author{
+    font-style: italic;
+        font-size: 18px;
+}
+
+
+
+/* ================================================ */
+/* Class Selector */
+/* ================================================ */
+.related-author{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.realted{
+    list-style: none;
 }
