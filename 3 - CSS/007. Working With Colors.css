@@ -1,16 +1,31 @@
 h1,h2,h3,h4,p,li{
     font-family: sans-serif;
+    color:#444;
 }
 
 /* ================================================ */
 /* Color */
 /* ================================================ */
+h1,h2,h3{
+    /*___ Hexa Color ___*/
+    color:#1098ad;
+    /* color:#fff; */
+
+    /*___ Rgb color ___*/
+    /* color:rgb(206,44,152); */
+
+    /*___ Rgba color ___*/
+    /* color:rgb(206,44,152,0.767); */
+}
 h1 {
     color: blue;
     font-size: 26px;
     text-transform: uppercase;
     font-style: italic;
 }
+
+
+
 h2{
     font-size: 40px;
 }
@@ -45,7 +60,34 @@ li{
     font-weight: bold;
 }
 
-
 .realted{
     list-style: none;
+}
+
+/* ================================================ */
+/* Background Color */
+/* ================================================ */
+.main-header{
+    background-color: #f7f7f7;
+}
+
+
+/* ================================================ */
+/* Border size + style + color */
+/* ================================================ */
+aside{
+    background-color: #f7f7f7;
+    /* border:5px dashed #1098ad;
+    border:5px dotted #1098ad; */
+
+    border-top:5px solid #1098ad;
+    border-bottom:5px solid #1098ad;
+
+    /* border-left:5px solid #1098ad;
+    border-right:5px solid #1098ad; */
+}
+
+
+body{
+    /* background-color: orange; */
 }
