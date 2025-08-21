@@ -1,0 +1,159 @@
+h1,h2,h3,h4,p,li{
+    font-family: sans-serif;
+    color:#444;
+}
+
+h1,h2,h3{
+    /*___ Hexa Color ___*/
+    color:#1098ad;
+    /* color:#fff; */
+
+    /*___ Rgb color ___*/
+    /* color:rgb(206,44,152); */
+
+    /*___ Rgba color ___*/
+    /* color:rgb(206,44,152,0.767); */
+}
+h1 {
+    color: blue;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
+
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size:30px;
+}
+h4{
+    font-size:20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+p{
+    font-size: 22px;
+    line-height: 1.5;
+}
+li{
+    font-size: 20px;
+}
+
+
+#copyright{
+    font-size: 16px;
+}
+
+#author{
+    font-style: italic;
+        font-size: 18px;
+}
+
+.related-author{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.realted{
+    list-style: none;
+}
+
+.main-header{
+    background-color: #f7f7f7;
+}
+
+aside{
+    background-color: #f7f7f7;
+    /* border:5px dashed #1098ad;
+    border:5px dotted #1098ad; */
+
+    border-top:5px solid #1098ad;
+    border-bottom:5px solid #1098ad;
+
+    /* border-left:5px solid #1098ad;
+    border-right:5px solid #1098ad; */
+}
+
+
+body{
+    /* background-color: orange; */
+}
+
+
+/* ================================================ */
+/* Pseudo-class */
+/* ================================================ */
+
+/********* BAD Logic ***********/
+/* .first-li{
+    font-weight: bolder;
+} */
+
+
+/********* GOOD Logic ***********/
+
+/*=========================*/
+/*first-child Pseudo Class*/
+/*=========================*/
+li:first-child{
+    font-weight: bolder;
+}
+
+/*=========================*/
+/*last-child Pseudo Class*/
+/*=========================*/
+li:last-child{
+    font-style: italic;
+}
+
+/*=========================*/
+/*nth-child Pseudo Class*/
+/*=========================*/
+li:nth-child(3){
+    color: red;
+}
+
+
+
+/*=========================*/
+/*nth-child(odd)*/
+/*=========================*/
+li:nth-child(odd){
+    background-color: pink;
+}
+
+/*=========================*/
+/*nth-child(even)*/
+/*=========================*/
+li:nth-child(even){
+    background-color: orange;
+}
+
+
+/********* WRONG CONCEPT ***********/
+/*
+Pseudo applyed on only the  child that inside the 1st Level of Perent   not 2nd , 3rd.... levels ok
+<parent>
+    <child>     //level 1
+        <child>    //level 2
+        </child>
+    </child>
+
+    <hild>      //level 1
+    </child>
+
+    <child>     //level 1
+    </child>
+
+    <child>     //level 1
+    </child>
+
+</parent>
+*/
+/*BAD*/
+article p:first-child{
+    background-color: yellow;
+}
