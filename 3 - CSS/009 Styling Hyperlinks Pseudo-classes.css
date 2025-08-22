@@ -82,79 +82,62 @@ body{
     /* background-color: orange; */
 }
 
-
-/* ================================================ */
-/* Pseudo-class */
-/* ================================================ */
-
-/********* BAD Logic ***********/
-/* .first-li{
-    font-weight: bolder;
-} */
-
-
-/********* GOOD Logic ***********/
-
-/*=========================*/
-/*first-child Pseudo Class*/
-/*=========================*/
 li:first-child{
     font-weight: bolder;
 }
 
-/*=========================*/
-/*last-child Pseudo Class*/
-/*=========================*/
 li:last-child{
     font-style: italic;
 }
 
-/*=========================*/
-/*nth-child Pseudo Class*/
-/*=========================*/
+
 li:nth-child(3){
-    color: red;
+    /* color: red; */
 }
 
 
-
-/*=========================*/
-/*nth-child(odd)*/
-/*=========================*/
 li:nth-child(odd){
-    background-color: pink;
+    /* background-color: pink; */
 }
 
-/*=========================*/
-/*nth-child(even)*/
-/*=========================*/
+
 li:nth-child(even){
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 
-/********* WRONG CONCEPT ***********/
+/* ================================================ */
+/* Styling hperLink Pseudo Classes */
+/* 1. Text Decuration    underline in text*/
+/* ================================================ */
 /*
-Pseudo applyed on only the  child that inside the 1st Level of Perent   not 2nd , 3rd.... levels ok
-<parent>
-    <child>     //level 1
-        <child>    //level 2
-        </child>
-    </child>
-
-    <hild>      //level 1
-    </child>
-
-    <child>     //level 1
-    </child>
-
-    <child>     //level 1
-    </child>
-
-</parent>
+BAD  this appyed on all a element
+a{
+  color:red;  
+}
 */
 
-/*BAD Misconception this won't work*/
-article p:first-child{
-    background-color: yellow;
+/*GOOD this apply on only  href a*/
+a:link {
+    color: #1098ad;
+    text-decoration:none;
 }
+
+a:visited{
+    color: #1098ad;
+}
+
+a:hover{
+    color: orangered;
+    font-weight: bold;
+    /* text-decoration: underline dotted orangered; */
+    /* text-decoration: underline wavy orangered; */
+    text-decoration: underline orangered;
+}
+
+a:active{
+    background-color: black;
+    font-style:italic;
+}
+
+/*LVHA*/
