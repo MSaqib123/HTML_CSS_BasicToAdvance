@@ -1,0 +1,221 @@
+/* universal selection */
+*{
+    margin:0;
+    padding:0;
+}
+
+/* ================================================ */
+/* 1. Padding */
+/* ================================================ */
+body{
+    font-family: sans-serif;
+    /* color:red; */
+}
+
+.main-header{
+    background-color: #f7f7f7;
+    border:2px solid green;
+
+    /* ========================= Padding ============================ */
+    /*------ All side --------*/
+    /* padding: 20px; */
+
+    /*------ Single side --------*/
+    /* padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-right: 20px; */
+
+    /*------ 2 sides --------*/
+    /* padding: topBottm_30px leftrigh_10px; */
+
+    /*------ 4 sides --------*/
+    padding: 40px/*top*/ 40px/*right*/ 50px/*bottm*/ 100px/*left*/;
+
+
+    /* ========================= Margin ============================ */
+    margin-bottom: 60px;
+}
+
+
+nav{
+    font-size:18px;
+}
+
+article{
+    margin-bottom: 50px;
+}
+
+aside{
+    background-color: #f7f7f7;
+    /* border:5px dashed #1098ad;
+    border:5px dotted #1098ad; */
+
+    border-top:5px solid #1098ad;
+    border-bottom:5px solid #1098ad;
+
+    /* border-left:5px solid #1098ad;
+    border-right:5px solid #1098ad; */
+
+    /*========== Padding ========== */
+    /* padding-top:50px;
+    padding-bottom:50px; */
+    padding:50px 0px;
+
+}
+
+.post-header{
+    margin-bottom: 40px;
+}
+
+
+
+
+/*___________ All Child Element of Body ___________*/
+h1,h2,h3,h4,p,li{
+    /* font-family: sans-serif; */
+    color:#444;
+}
+
+h1,h2,h3{
+    /*___ Hexa Color ___*/
+    color:#1098ad;
+}
+h1 {
+    color: blue;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+h3{
+    font-size:30px;
+    margin-bottom: 20px;
+}
+h4{
+    font-size:20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+p{
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+ul,ol{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+li{
+    font-size: 20px;
+    padding-bottom:40px;
+}
+li:last-child{
+    padding-bottom: 0;
+}
+
+
+#copyright{
+    font-size: 16px;
+}
+#author{
+    font-style: italic;
+    font-size: 18px;
+}
+.related-author{
+    font-size: 18px;
+    font-weight: bold;
+}
+.realted{
+    list-style: none;
+}
+
+
+
+li:first-child{
+    font-weight: bolder;
+}
+
+li:last-child{
+    font-style: italic;
+}
+
+
+li:nth-child(3){
+    /* color: red; */
+}
+
+
+li:nth-child(odd){
+    /* background-color: pink; */
+}
+
+
+li:nth-child(even){
+    /* background-color: orange; */
+}
+
+a:link {
+    color: #1098ad;
+    text-decoration:none;
+}
+
+a:visited{
+    color: #1098ad;
+}
+
+a:hover{
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline orangered;
+}
+
+a:active{
+    background-color: black;
+    font-style:italic;
+}
+
+
+
+
+/* 
+#copyright{
+    color:red;
+}
+
+.copyright{
+    color:blue;
+}
+
+
+.text{
+    color:yellow;
+}
+
+footer p {
+    color:green
+} */
+
+/*----- important keyword is hack  ------------*/
+/* it urgent work */
+/* footer p {
+    color:pink !important
+} */
+
+
+
+
+/*___________ Parent Element is NAV for li ___________*/
+/*link Pseudo class*/
+/*BAD
+nav a:link, nav p{
+    font-size:18px;
+}*/
+/*GOOD*/
+/* nav{
+    font-size:18px;
+} */
