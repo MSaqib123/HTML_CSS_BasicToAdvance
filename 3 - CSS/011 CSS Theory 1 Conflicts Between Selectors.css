@@ -142,3 +142,9 @@ a:active{
 footer p {
     color:green
 }
+
+/*----- important keyword is hack  ------------*/
+/* it urgent work */
+/* footer p {
+    color:pink !important
+} */
