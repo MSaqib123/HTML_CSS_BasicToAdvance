@@ -5,9 +5,96 @@
 }
 
 /* ================================================ */
-/* 1. Padding */
-/* 2. Margin */
+/* 1. Pseudo Element are differnt from  Pseudo class */
 /* ================================================ */
+
+h1::first-letter{
+    font-style: normal;
+    margin-right: 40px;
+}
+
+h3::first-letter{
+    font-size: 90px;
+}
+
+p::first-line{
+    color: red;
+}
+
+
+/* ================================================ */
+/* 2. Ajson Sibling Selector */
+/* select the sibling elmeents*/
+/* ================================================ */
+h3 + p::first-letter{
+    color: Green;
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+
+
+
+
+/* ================================================ */
+/* 3. Befor , After  Pseudo Element */
+/* do add context or Teext from CSS but not visisble in html*/
+/* ================================================ */
+h2{
+    /* background-color: green; */
+
+    position:relative;
+}
+h2::after{
+    content: "TOP";
+    background-color: yellow;
+    color:black;
+    font-size: 16px;
+    font-weight: bold;
+
+    /* display: inline-block; */
+    display: inline-block;
+    padding:5px 10px;
+
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+
+
+h2::before{
+    content: "TOP";
+    background-color: red;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+
+    /* display: inline-block; */
+    display: inline-block;
+    padding:5px 10px;
+
+    position: absolute;
+    top: -20px;
+    left: -40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body{
     font-family: sans-serif;
     /* color:red; */
