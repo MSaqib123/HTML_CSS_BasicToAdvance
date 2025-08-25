@@ -11,6 +11,9 @@
 body{
     font-family: sans-serif;
     /* color:red; */
+
+
+    position:relative
 }
 
 
@@ -46,7 +49,7 @@ body{
     margin-bottom: 60px;
     
     /* ========================= Dimensions ============================ */
-    /* height: 80px; */
+    height: 80px;
 }
 
 
@@ -126,13 +129,6 @@ ul,ol{
 li{
     font-size: 20px;
     padding-bottom:40px;
-    
-    /*========================================*/
-    /*------ Convert to Inline Element --------*/
-    /*========================================*/
-    /* display: inline;
-    background-color: red;
-    margin-left: 40px; */
 }
 li:last-child{
     padding-bottom: 0;
@@ -206,45 +202,38 @@ a:active{
     height: auto;
 }
 
-nav a:link{
-    background-color: red;
-    margin-right: 20px;
 
-    /*========================================*/
-    /*------ Convert to Block Element --------*/
-    /*========================================*/
-    /* not working on inline element */
-    /* margin-top: 50px; */
 
-    /* to make it work */
-    /* display: block;    We make this as  Block eleemnt */
-    /* margin-top: 0px; */
-    /* margin-top:20px */
+button{
+    font-size: 22px;
+    padding:20px;
+    cursor: pointer;
 
-    /*========================================*/
-    /*---- Convert to inline-Block Element ------*/
-    /*========================================*/
-    /*
-    inline-block  behave both  
-    1. from_out_side the behave  inline
-    2. Inner side behave like block
-    */
-    margin-top: 20px;
-    display: inline-block;
+    /*====== Poisition ========*/
+    /*Default :  issues is that it should disply to visible port (view port)*/
+    
+    position: absolute;
+
+    /* ___ Top-left___ */
+    /* top:0;
+    left:0; */
+
+    /* ___ Bottom-left___ */
+    /* bottom:0;
+    left:0; */
+    
+    /* ___ Top-Right___ */
+    /* ___ Bottom-Right___ */
+    bottom:25px;
+    right:100px;
+
+    /*But we want to show to last in bottom of page*/
+    /*for this we have to set parent Element to   displary:relative  
+    like  the button parent can be   
+    Body , div , only thing ....
+    in this case body is   parent element so set it now*/
 }
 
-nav a:link:last-child{
-    margin-right: 0;
-}
-
-
-
-
-/*====================== Images ==========================*/
-/* images are  inline-block element */
-.post-img{
-    margin-top: 100px;
-}
 
 /* 
 #copyright{
