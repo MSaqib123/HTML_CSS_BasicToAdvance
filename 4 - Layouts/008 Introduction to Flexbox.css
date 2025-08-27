@@ -31,7 +31,21 @@
         font-size: 40px;
         margin: 40px;
 
+        /*=====================================*/
         /* CSS GRID */
+        /*=====================================*/
+        display: flex;
+
+        /*---- Verticaly align ----*/
+        align-items: center;
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+
+        /*---- horizontal align ----*/
+        /* justify-content: center; */
+        /* justify-content: end; */
+        /* justify-content: start; */
+        justify-content: space-between;
       }
 
       .container--2 {
