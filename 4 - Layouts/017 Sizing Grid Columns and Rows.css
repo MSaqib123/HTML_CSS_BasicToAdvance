@@ -1,0 +1,74 @@
+.el--1 {
+        background-color: blueviolet;
+      }
+      .el--2 {
+        background-color: orangered;
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+        /* height: 250px; */
+      }
+      .el--4 {
+        background-color: goldenrod;
+      }
+      .el--5 {
+        background-color: palevioletred;
+      }
+      .el--6 {
+        background-color: steelblue;
+      }
+      .el--7 {
+        background-color: yellow;
+      }
+      .el--8 {
+        background-color: crimson;
+      }
+
+      .container--1 {
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 40px;
+        margin: 40px;
+
+        /* ================================================ */
+        /* grid */
+        /* ================================================ */
+        display: grid;
+
+        /*========== Responsive Columns by fr ==========*/
+        /*Freqstion unit */
+        /* grid-template-columns: 1fr 1fr 1fr auto;  */
+        grid-template-columns: repeat(4,1fr);
+
+        /*========== Responsive Row by fr ==========*/
+        /*row fr  depend of  container height*/
+        /* grid-template-rows: 1fr 1fr;  */
+        grid-template-rows: 1fr auto; 
+
+        /*========== Gap ==========*/
+        /*applied to all*/
+        /* gap: 25px;*/
+
+        /*gap to Column only*/
+        column-gap: 50px;
+
+        /*gap to row only*/
+        row-gap: 20px;
+      }
+      
+
+
+      .container--2 {
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: black;
+        font-size: 40px;
+        margin: 100px;
+
+        width: 1000px;
+        height: 600px;
+
+        /* CSS GRID */
+      }
