@@ -51,16 +51,43 @@
 
         /*---- Gap ----*/
         /*instead of adding   margin-right for gap we use gap in flex very simple*/
-        gap:30px;
+        gap:10px;
       }
       .el{
-        /* margin-right: 30px; */
+        /*======================*/
+        /* Flex properites */
+        /*======================*/
+        /*
+        DEFAULT
+        flex-grow:0;
+        flex-shrink:1;
+        flex-basis:auto;
+        */
+
+        /* flex-basis: 400px; */
+
+        /*=== flex-shrink ===*/
+        /*== flex by default  set  shrink = 1   means autmatically adjest the width of elements inside the el*/
+        /*but we set thte   shrink=0  then  widht is base on flex-basis*/
+        /* flex-shrink: 0; */
+
+        /*=== flex-grow ===*/
+        /*it will distribute the width to equal the size of parent element of el*/
+        /* flex-grow:1; */
+
+
+
+        /*=== All in One ===*/
+        /*flex : grow shrink basis*/
+         flex:0 1 200px;
       }
 
-      
+
       .el--1{
         /* align the eleement it self from accept other */
         align-self:flex-start;
+        /*=== flex-grow ===*/
+        /* flex-grow: 1; */
       }
       .el--5{
         /* align the eleement it self from accept other */
@@ -82,10 +109,10 @@
       .el--1{
          /*-- move to last position ---*/
          /*order:1 is alredy taken to make it  last we have to give 2*/
-        order:2;
+        /* order:2; */
       }
 
-      
+
 
 
 
