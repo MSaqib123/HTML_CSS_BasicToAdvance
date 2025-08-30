@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family: sans-serif;
+            line-height: 1.4;
+        }
+
+        /* ======================== */
+        /* ----------- product ---- */
+        /* ======================== */
+        .product{
+            width: 825px;
+            padding:4px 5px;
+            margin:50px auto;
+            border:5px solid black;
+            position: relative;
+            display: grid;
+            grid-template-columns: 250px 1fr 1fr;
+            column-gap: 30px;
+        }
+        .product::before{
+            content: 'SALE';
+            background-color: red;
+            letter-spacing: 2px;  /* Adjust value as needed */
+            color:white;
+            font-size: 18px;
+            padding: 5px 16px;
+            display: inline-block;
+            position: absolute;
+            top: -20px;
+            left: -40px;
+        }
+        .product-title{
+            grid-column: 1/span 3;
+            text-align: center;
+            background-color: #f6f6f6;
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding:5px;
+
+        }
+        /* ======================== */
+        /* --- product informa ---- */
+        /* ======================== */
+        .price-shipping-div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .price{
+            font-weight: bolder;
+            font-size: 20px;
+            flex:1;
+        }
+        .shipping{
+            color:#444242;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 12px;
+            flex:1;
+            
+        }
+
+        .product-desc{
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        
+        .more-information:link , .more-information:visited{
+            color: black;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .more-information:link:hover , .more-information:link:active{
+            text-decoration: none;
+        }
+
+        /* ======================== */
+        /* --- product details ---- */
+        /* ======================== */
+        .details-title{
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-bottom: 20px;
+
+        }
+        .details-list{
+            list-style: square;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .cart-btn{
+            background-color: black;
+            color: white;
+            padding: 5px 20px;
+            border:none;
+            cursor: pointer;
+            outline: 0px;
+            font-size: 18px;
+        }
+        .cart-btn:hover{
+            background-color: rgb(27, 27, 27);
+        }
+
+        /* ======================== */
+        /* ----- Product color ---- */
+        /* ======================== */
+        .product-color-container{
+            margin-bottom: 20px;
+               display: flex;
+               gap:10px
+        }
+        .product-color{
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .product-color:last-child{
+            margin-right: 0;
+        }
+        .black{
+            background-color: black;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .red{
+            background-color: red;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .pink{
+            background-color: pink;
+        }
+
+        /* ======================= */
+        /*----- Float layout ------*/
+        /* ======================= */
+        .img-div{
+            box-sizing: border-box;
+        }
+        .shipping-div{
+            box-sizing: border-box;
+            padding-top: 20px;
+        }
+        .detail-div{
+            box-sizing: border-box;
+            padding-top: 20px;
+        }
+        .cart-btn{
+            width:100%;
+            grid-column: 1/span 3;
+
+        }
+
+        img{
+            width:100%;
+            height:100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <article class="product">
+        <h2 class="product-title"> Converse Chuck Taylor All Star Low Top </h2>
+
+        <div class="img-div">
+            <img src="https://i.ibb.co/Jr7Wh1d/challenges.jpg" alt="Chuck Taylor All Star Shoe" height="250" width="250" />
+        </div>
+
+        <div class="shipping-div">
+            <div class="price-shipping-div">
+                <p class="price"><strong>$65.00</strong></p>
+                <p class="shipping">Free shipping</p>
+            </div>
+
+            <p class="product-desc">Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe staple.</p>
+            <a href="#" class="more-information">more information -></a>
+                
+            <div class="product-color-container">
+                <div class="product-color black"></div>
+                <div class="product-color blue"></div>
+                <div class="product-color red"></div>
+                <div class="product-color yellow"></div>
+                <div class="product-color green"></div>
+                <div class="product-color pink"></div>
+            </div>
+        </div>
+
+        <div class="detail-div">
+            <h3 class="details-title">
+                Product details
+            </h3>
+
+            <ul class="details-list">
+                <li>Lightweight, durable canvas sneaker</li>
+                <li>Lightly padded footbed for added comfort</li>
+                <li>Iconic Chuck Taylor ankle patch</li>
+            </ul>
+        </div>
+        
+        <button class="cart-btn">Add to Cart</button>
+    </article>
+</body>
+</html>
