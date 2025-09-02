@@ -57,6 +57,8 @@ h2 {
   display: inline-block;
   text-decoration: none;
 
+  border-radius: 100px;
+
 }
 .btn:hover,.btn:active{
   background-color: #099268;
@@ -107,6 +109,7 @@ h1 {
 
 img {
   width: 100%;
+  border-radius: 20px;
 }
 
 /* FEATURES */
@@ -160,6 +163,12 @@ img {
   
   /*GOOD  horiz=0*/
   box-shadow:0 20px 30px 0px rgba(0,0,0,0.1);
+
+  border-radius: 12px;
+}
+.chair img{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 
