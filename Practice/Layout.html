@@ -1,0 +1,71 @@
+<!--==================================================-->
+<!-- 002 The 3 Ways of Building Layouts -->
+<!--==================================================-->
+<!-- 
+    Layout means ???
+    1. it means how   TAX,IMAGE, CONTENT is place and arrange in webpage
+    2. layout give the strucuter to  WEBPage
+    3. this make web Best looking
+-->
+<!--
+    3 way of bulding alyout in css
+    1. float
+    2. flexbox
+    3. cssgrdi
+-->
+
+<!--==================================================-->
+<!-- 3. Using Floats -->
+<!--==================================================-->
+<!--
+    NOTE
+    it change the stickyness or position of element totaly
+    change the img  float:left then see it
+
+    -- ❌ p,h1... Pedding left ,top  will note work correctly 
+    -- ✅ you should also need to assign the  fload:left to  other neigbour element
+    -- i am still not understand  float becuase it react very waired in design 
+    -- personally i don't like  float 
+    -- it has impact on surranding elemenets 
+
+    -- ISSUE
+    -- elements is removed from the normal flow-> (Out of flow)
+    -- Text and inline elements will wrap around the floated element
+    -- the container will not adjust its height to the element
+
+
+    1. float: left;   set the contnet left
+    2. float: right;
+-->
+<style>
+    .img{
+        float:left;
+    }
+    .p1{
+        float: left;
+        padding-left: 100px ;
+        background-color: red;
+        height: auto;
+    }
+    .h2{
+        float: left;
+        background-color: pink;
+        height: auto;
+        padding-left: 100px;
+    }
+    .h3{
+        float: left;
+        background-color: orange;
+        height: auto;
+        padding-left: 100px;
+    }
+    
+</style>
+<div>
+    <img class="img" src="https://images.pexels.com/photos/5037083/pexels-photo-5037083.jpeg" height="200px" width="200px"/>
+    <p class="p1">Pakistan</p>
+    <h2 class="h2">India </h2>
+    <h3 class="h3">heading 3</h3>
+</div>
+
+

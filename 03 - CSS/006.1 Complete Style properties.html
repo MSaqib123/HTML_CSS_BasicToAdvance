@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Most Used Text CSS Properties – Clean Example</title>
+  
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #e74c3c;
+      --light-bg: #f9fbfc;
+      --gray: #7f8c8d;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+      color: var(--primary);
+      background: var(--light-bg);
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      word-spacing: 0.2em;
+      margin-bottom: 2rem;
+      color: var(--accent);
+    }
+
+    h2 {
+      text-align: left;
+      margin-top: 2.5rem;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+    }
+
+    .article {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin: 2rem 0;
+    }
+
+    .article p {
+      margin: 1.4em 0;
+      text-align: justify;
+      text-indent: 2em;                /* common for article paragraphs */
+      hyphens: auto;                   /* automatic hyphenation – very popular */
+      letter-spacing: 0.01em;          /* subtle improvement in readability */
+      word-spacing: 0.03em;            /* very light – natural look */
+      overflow-wrap: break-word;       /* prevents layout break on long words/URLs */
+    }
+
+    .highlight {
+      background: #fff3cd;
+      padding: 0.1em 0.4em;
+      border-radius: 4px;
+    }
+
+    .blockquote {
+      margin: 2rem 0;
+      padding: 1rem 2rem;
+      border-left: 5px solid var(--accent);
+      font-style: italic;
+      color: var(--gray);
+      text-align: left;
+    }
+
+    .nowrap-demo {
+      white-space: nowrap;             /* very common for titles, buttons, tags */
+      overflow: hidden;
+      text-overflow: ellipsis;         /* classic "..." for overflowing text */
+      max-width: 100%;
+      display: inline-block;
+      background: #ecf0f1;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      margin: 1rem 0;
+    }
+
+    .rtl-demo {
+      direction: rtl;                  /* essential for Arabic, Urdu, Hebrew sites */
+      text-align: right;
+      font-family: "Noto Nastaliq Urdu", system-ui, sans-serif;
+      background: #f8f1e9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+
+    .vertical-align-box {
+      border: 1px dashed #95a5a6;
+      padding: 1.5rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .vertical-align-box span {
+      vertical-align: middle;          /* super common for icons + text alignment */
+      margin: 0 0.8rem;
+      background: gold;
+      padding: 0.3em 0.6em;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--gray);
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+
+    code {
+      background: #f1f2f6;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      font-family: "Consolas", monospace;
+    }
+  </style>
+</head>
+<body>
+
+<ol>
+  <li><code>text-align</code>          — left | center | right | justify</li>
+  <li><code>text-indent</code>         — first line indent (2em, 20px…)</li>
+  <li><code>text-transform</code>      — uppercase | lowercase | capitalize | none</li>
+  <li><code>white-space</code>         — normal | nowrap | pre-wrap | pre-line</li>
+  <li><code>word-spacing</code>        — space between words (0.1em, 2px…)</li>
+  <li><code>letter-spacing</code>      — space between letters / tracking (0.05em, -0.02em…)</li>
+  <li><code>text-overflow</code>       — ellipsis (needs overflow:hidden + white-space:nowrap)</li>
+  <li><code>overflow-wrap</code>       — break-word | anywhere (prevents long word overflow)</li>
+  <li><code>word-break</code>          — normal | break-all (especially for long URLs or codes)</li>
+  <li><code>hyphens</code>             — auto (automatic hyphenation in justified text)</li>
+  <li><code>direction</code>           — ltr | rtl (important for multilingual sites)</li>
+  <li><code>vertical-align</code>      — baseline | middle | top | sub | super (for inline elements)</li>
+</ol>
+
+
+<h1>Most Used Text Styling Properties in Real Projects</h1>
+
+<div class="article">
+  <h2>Normal Article Paragraph</h2>
+  <p>
+    This is how most blog posts and articles look today. We use 
+    <span class="highlight">text-align: justify</span> with a small 
+    <code>text-indent</code>, <code>hyphens: auto</code> for beautiful line endings, 
+    very light <code>letter-spacing</code> and <code>word-spacing</code>, and 
+    <code>overflow-wrap: break-word</code> to prevent layout destruction from verylongunbreakablewordsorlongURLs.
+  </p>
+
+  <p>
+    Second paragraph continues the same style. These properties appear in almost 
+    every professional website because they improve readability without much effort.
+  </p>
+</div>
+
+<div class="nowrap-demo">
+  This very long title or tag name will show ellipsis when the container is too narrow → VeryLongProductNameThatDoesNotFitHere
+</div>
+
+<blockquote class="blockquote">
+  “Good typography is invisible. These few properties make 90% of readable text on the web.”
+</blockquote>
+
+<div class="rtl-demo">
+  یہ ایک اردو کا جملہ ہے جس میں direction: rtl اور text-align: right استعمال کیا گیا ہے۔  
+  بہت سے پاکستانی اور عربی ویب سائٹس میں یہ پراپرٹیز لازمی ہوتی ہیں۔
+</div>
+
+<div class="vertical-align-box">
+  <span>Icon</span> Text aligned vertically in the middle <span>+</span> more text
+</div>
+
+<footer>
+  Demonstrating only the ~8–10 most frequently used text/layout properties in modern web design (2025–2026)
+</footer>
+
+</body>
+</html>
